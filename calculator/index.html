@@ -13,16 +13,17 @@
             <div class="formcontainer" >
                 <input id="valuebox" type="number" placeholder="Addvalue">
                 <div class="button-section">
-                    <button type="button" id="addbutton">Add</button>
-                    <button type="button" id="subtraction">Subtraction</button>
-                    <button type="button" id="multiply">Multiply</button>
-                    <button type="button" id="division">Division</button>
+                    <button type="button" onclick="addNewNumber()" id="addbutton">Add</button>
+                    <button type="button" onclick="subtractNewNumber()" id="subtraction">Subtraction</button>
+                    <button type="button" onclick="multiplyNewNumber()" id="multiply">Multiply</button>
+                    <button type="button" onclick="divideNewNumber()" id="division">Division</button>
                 </div>
             </div>
             <div id="numberlist"></div>
         </div>
     </div>
     
-    <script src="javascript.js"></script>
+    <!-- <script src="javascript.js"></script> -->
+    <script src="newLogic.js"></script>
 </body>
 </html>
