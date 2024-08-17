@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="main-container">
-        <div class="container">
-            <div class="totalnumber" id="totalvalue">0</div>
-            <div class="formcontainer" >
-                <input id="valuebox" type="number" placeholder="Addvalue">
-                <div class="button-section">
-                    <button type="button" onclick="addNewNumber()" id="addbutton">Add</button>
-                    <button type="button" onclick="subtractNewNumber()" id="subtraction">Subtraction</button>
-                    <button type="button" onclick="multiplyNewNumber()" id="multiply">Multiply</button>
-                    <button type="button" onclick="divideNewNumber()" id="division">Division</button>
-                </div>
-            </div>
-            <div id="numberlist"></div>
+      <div class="container">
+        <div class="calculator">
+          <div id="allTransactions">
+            <!-- <div>1 + 5 = 100</div>
+            <div>1 + 5 = 100</div>
+            <div>1 + 5 = 100</div> -->
+          </div>
+          <div id="display">
+            <span></span>
+            &nbsp;
+            <span></span>
+            &nbsp;
+            <span></span>
+          </div>
+          <div class="button-section">
+            <button class="btn" onclick="addNumChar('7')" value="7">7</button>
+            <button class="btn" onclick="addNumChar('8')" value="8">8</button>
+            <button class="btn" onclick="addNumChar('9')" value="9">9</button>
+            <button class="btn" onclick="divide()" value="/">÷</button>
+            <button class="btn" onclick="addNumChar('4')" value="4">4</button>
+            <button class="btn" onclick="addNumChar('5')" value="5">5</button>
+            <button class="btn" onclick="addNumChar('6')" value="6">6</button>
+            <button class="btn" onclick="multiply()" value="*">x</button>
+            <button class="btn" onclick="addNumChar('1')" value="1">1</button>
+            <button class="btn" onclick="addNumChar('2')" value="2">2</button>
+            <button class="btn" onclick="addNumChar('3')" value="3">3</button>
+            <button class="btn" onclick="subtract()" value="-">-</button>
+            <button class="btn" onclick="addNumChar('0')" value="0">0</button>
+            <button class="btn" onclick="addNumChar('.')" value=".">.</button>
+            <button class="btn" onclick="calculate()" value="=">=</button>
+            <button class="btn" onclick="add()" value="+">+</button>
+            <button class="btn clear" onclick="clearDisplayValue()" value="C">c</button>
+            <button class="btn reset" onclick="resetCalculator()" >reset</button>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <!-- <script src="javascript.js"></script> -->
-    <script src="newLogic.js"></script>
-</body>
+
+    <script src="logic.js"></script>
+  </body>
 </html>
